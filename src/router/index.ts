@@ -10,7 +10,7 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      redirect: '/dashboard/home',
+      redirect: '/shadcn/readme',
     },
     {
       path: '/login',
