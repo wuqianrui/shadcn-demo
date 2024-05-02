@@ -12,6 +12,10 @@ import { RouterLink } from 'vue-router';
       <RouterLink to="/dashboard/home">
         <Button class="mt-4" variant="outline" prepend-icon="ArrowLeft">Back to Home</Button>
       </RouterLink>
+      <RouterLink to="/shadcn/readme">
+        <Button class="mt-4" variant="outline" prepend-icon="ArrowLeft">Back to Shadcn</Button>
+      </RouterLink>
+
     </div>
   </div>
 </template>
