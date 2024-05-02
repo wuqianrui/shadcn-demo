@@ -135,7 +135,7 @@
             <Separator class="mt-4 mb-6" />
             <component
               :is="`a`"
-              href="https://icon-sets.iconify.design/?category=General&query=radix"
+              href="https://icon-sets.iconify.design/?list=recent"
               target="_blank"
               class="text-foreground hover:underline"
               >Iconify config</component
@@ -167,7 +167,7 @@
                   :is="`a`"
                   href="https://ui.shadcn.com/docs/components/typography"
                   target="_blank"
-                  class="text-foreground hover:underline"
+                  class="text-foreground underline"
                 >
                   <h2 class="text-base">
                     <TablerBrandRadixUi class="inline-block" /> shadcn typography
@@ -184,14 +184,29 @@
                   :is="`a`"
                   href="https://tailwindcss.com/docs/font-size"
                   target="_blank"
-                  class="text-foreground hover:underline"
+                  class="text-foreground underline"
                 >
                   <h2 class="text-base">
-                    <TablerBrandRadixUi class="inline-block" /> tailwind css
+                    <TailwindcssIcon class="inline-block" /> tailwind css
                   </h2>
                 </component>
               </li>
               <p class="text-muted-foreground text-sm mt-2">tailwind css 样式快速查询</p>
+              <!-- docs -->
+              <!-- docs -->
+              <li class="text-base">
+                <component
+                  :is="`a`"
+                  href="https://rogden.github.io/tailwind-config-viewer/#Colors"
+                  target="_blank"
+                  class="text-foreground underline"
+                >
+                  <h2 class="text-base">
+                    <TailwindcssIcon class="inline-block" /> tailwind css config viewer
+                  </h2>
+                </component>
+              </li>
+              <p class="text-muted-foreground text-sm mt-4">tailwind 样式查看面板 <a href="https://github.com/rogden/tailwind-config-viewer" class="underline"><GithubIcon class="inline-block" />tailwind-config-viewer</a></p>
               <!-- docs -->
               <!-- docs -->
               <li>
@@ -199,10 +214,10 @@
                   :is="`a`"
                   href="https://play.tailwindcss.com/"
                   target="_blank"
-                  class="text-foreground hover:underline"
+                  class="text-foreground underline"
                 >
                   <h2 class="text-base">
-                    <TablerBrandRadixUi class="inline-block" /> tailwind play 
+                    <TailwindcssIcon class="inline-block" /> tailwind play 
                   </h2>
                 </component>
               </li>
@@ -223,7 +238,7 @@
                   target="_blank"
                   class="text-foreground hover:underline"
                 >
-                  <h2 class="text-base"><Github class="inline-block" /> vue-shadcn-dashboard</h2>
+                  <h2 class="text-base"><GithubIcon class="inline-block" /> vue-shadcn-dashboard</h2>
                 </component>
               </li>
               <p class="text-muted-foreground text-sm mt-2">
@@ -238,11 +253,26 @@
                   target="_blank"
                   class="text-foreground hover:underline"
                 >
-                  <h2 class="text-base"><Github class="inline-block" /> shadcn-vue</h2>
+                  <h2 class="text-base"><GithubIcon class="inline-block" /> shadcn-vue</h2>
                 </component>
               </li>
               <p class="text-muted-foreground text-sm mt-2">
                 shadcn-vue 拥有部分组件，且有着官方文档的示例。
+              </p>
+              <!-- github repo -->
+              <!-- github repo -->
+              <li>
+                <component
+                  :is="`a`"
+                  href="https://github.com/radix-vue/shadcn-vue/blob/dev/apps/www/src/lib/registry/default/ui/navigation-menu/NavigationMenu.vue"
+                  target="_blank"
+                  class="text-foreground hover:underline"
+                >
+                  <h2 class="text-base"><GithubIcon class="inline-block" />shadcn-vue's Github</h2>
+                </component>
+              </li>
+              <p class="text-muted-foreground text-sm mt-2">
+                shadcn-vue 官方文档，缺少的组件可以从这里引入。
               </p>
               <!-- github repo -->
             </ul>
@@ -262,7 +292,7 @@
 
 <script setup lang="ts">
 /* 引入图标 */
-import { TablerBrandRadixUi, SvgLoadingIcon, Github } from '@/components/icon'
+import { TablerBrandRadixUi, SvgLoadingIcon, GithubIcon , TailwindcssIcon } from '@/components/icon'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Separator } from '@/components/ui/separator'
 import { Badge } from '@/components/ui/badge'
